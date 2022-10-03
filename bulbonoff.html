@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb ON OFF</title>
+</head>
+
+<body>
+    <!--BulbON-->
+    <button onclick="onBulb()">Bulb_On</button>
+
+    <img src="../javascript/images/ONbulb.png" height="100vh" width="100vw" id="bulb" alt="on_bulb">
+    <!--BulbOFF-->
+    <button onclick="offBulb()">Bulb_Off</button>
+
+    <script>
+        function onBulb() {
+            document.getElementById("bulb").src = "../javascript/images/ONbulb.png";
+        }
+        function offBulb() {
+            document.getElementById("bulb").src = "../javascript/images/pic_bulboff.png";
+        }
+    </script>
+
+
+</body>
+
+</html>
